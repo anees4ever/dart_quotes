@@ -2,8 +2,8 @@ library dart_quote;
 
 import 'package:flutter/material.dart';
 
-/// A Calculator. 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
-/// git remote set-url origin https://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@github.com/HeshanSandeepa/dart_quotes.git
+/// A Calculator. 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
+/// git remote set-url origin https://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@github.com/HeshanSandeepa/dart_quotes.git
 ///
 class DartQuote extends StatelessWidget {
   final Color quoteColor;
