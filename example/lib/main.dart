@@ -34,9 +34,9 @@ class MyHomePage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(32.0),
       child: Container(
-          color: Colors.blueGrey,
-          child:  DartQuote(
-            text: 'This is a sample quote',
+          color: Colors.white,
+          child: const DartQuote(
+            text: 'This is the sample text that needs a quote wrapping, This is the sample text that needs a quote wrapping',
           )),
     );
   }
