@@ -8,46 +8,34 @@ class DartQuote extends StatelessWidget {
   final TextStyle quoteStyle; //  quote style as preferred.
   final EdgeInsets padding; // padding for the text widget
 
-   DartQuote(
-      {required this.text,
-      this.textStyle = const TextStyle(
-          color: Colors.black, fontWeight: FontWeight.normal, fontSize: 40),
-      this.quoteStyle = const TextStyle(
-          color: Colors.black, fontWeight: FontWeight.bold, fontSize: 40),
-      this.padding = const EdgeInsets.fromLTRB(32.0, 0.0, 32.0, 40),});
+  const DartQuote({
+    required this.text,
+    this.textStyle = const TextStyle(
+        color: Colors.black, fontWeight: FontWeight.normal, fontSize: 20),
+    this.quoteStyle = const TextStyle(
+        color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+    this.padding = const EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 32.0),
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Container(
-          color: Colors.red,
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Row(
-              children: [Text('\u201F', style: quoteStyle), const Spacer()],
-            ),
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Text('\u275D', style: quoteStyle), const Spacer()],
         ),
-        Container(
-          color: Colors.green,
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(32.0, 0.0, 32.0, quoteStyle.fontSize!),
-            child: Text(text, textAlign: TextAlign.center, style: textStyle),
-          ),
+        Padding(
+          padding: padding,
+          child: Text(text, textAlign: TextAlign.center, style: textStyle),
         ),
-        Container(
-          color: Colors.red,
-          child: Align(
-            alignment: Alignment.centerRight,
-            child: Row(
-              children: [
-                const Spacer(),
-                Text('\u201D', style: quoteStyle),
-              ],
-            ),
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Spacer(),
+            Text('\u275E', style: quoteStyle),
+          ],
         ),
       ],
     );
