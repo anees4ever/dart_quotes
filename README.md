@@ -11,22 +11,23 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+dart_quote is a simple dart package for wrapping a String with quote marks
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+01. String style, Quote style & padding is configurable.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Easy to use as follows
+
+    const DartQuote(text: 'Quote Test')
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Please check Example main.dart file
+
+
 
 ```dart
 const like = 'sample';
@@ -34,6 +35,4 @@ const like = 'sample';
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+![img.png](img.png)
