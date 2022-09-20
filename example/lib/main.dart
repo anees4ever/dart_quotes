@@ -37,8 +37,7 @@ class MyHomePage extends StatelessWidget {
       child: Center(
         child: Container(
             child: StringQuote(
-          text:
-              'This is the sample text including Quotes.',
+          text: 'This is the sample text including Quotes.',
         ).quote()),
       ),
     );

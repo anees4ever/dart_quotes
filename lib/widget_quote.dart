@@ -1,3 +1,5 @@
+library dart_quote;
+
 import 'package:flutter/material.dart';
 
 import 'abstract_quote.dart';

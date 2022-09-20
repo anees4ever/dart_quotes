@@ -15,24 +15,34 @@ dart_quote is a simple dart package for wrapping a String with quote marks
 
 ## Features
 
-01. String style, Quote style & padding is configurable.
+There are two types of Quote Widgets here.
+
+WidgetQuote & String Quote
+
+WidgetQuote - Wrap a given text with Quote marks like a whole widget
+StringQuote - Wrap a give text with Quotes marks like String.
 
 ## Getting started
 
 Easy to use as follows
 
-    const DartQuote(text: 'Quote Test')
+    import 'package:dart_quote/widget_quote.dart';
+
+    or 
+
+    import 'package:dart_quote/string_quote.dart';
 
 ## Usage
 
-Please check Example main.dart file
+    01. StringQuote
+    StringQuote(
+          text: 'This is the sample text including Quotes.',
+        ).quote()
+
+    02. WidgetQuote
+    WidgetQuote(
+          text: 'This is the sample text including Quotes.',
+        ).quote()
 
 
 
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-![img.png](img.png)
