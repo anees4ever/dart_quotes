@@ -1,5 +1,6 @@
-import 'package:dart_quote/dart_quote.dart';
 import 'package:flutter/material.dart';
+import 'package:dart_quote/widget_quote.dart';
+import 'package:dart_quote/string_quote.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,11 +34,12 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(32.0),
-      child: Container(
-          color: Colors.white,
-          child: const DartQuote(
-            text: 'This is the sample text that needs a quote wrapping, This is the sample text that needs a quote wrapping',
-          )),
+      child: Center(
+        child: Container(
+            child: StringQuote(
+          text: 'This is the sample text including Quotes.',
+        ).quote()),
+      ),
     );
   }
 }

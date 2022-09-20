@@ -1,6 +1,6 @@
 name: dart_quote
-description: Represent string a  quotes
-version: 0.0.1
+description: Creates quote widget or string
+version: 0.0.2
 homepage: https://github.com/HeshanSandeepa/dart_quotes.git
 
 environment:
