@@ -16,6 +16,6 @@ class StringQuote extends DartQuote {
 
   @override
   quote() {
-    return Text('\u275D ' + text + ' \u275E');
+    return Text('\u275D $text \u275E', style: textStyle);
   }
 }

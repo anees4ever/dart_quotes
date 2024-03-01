@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:dart_quote/widget_quote.dart';
 import 'package:dart_quote/string_quote.dart';
 
 void main() {
